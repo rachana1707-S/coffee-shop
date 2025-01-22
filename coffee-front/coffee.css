@@ -1,0 +1,344 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-content {
+  position: absolute; /* Positions content over the image */
+  top: 30%; /* Centers content vertically */
+  left: 50%; /* Centers content horizontally */
+  transform: translate(-50%, -50%); /* Offsets content to the center */
+  color: white; /* Text color */
+  text-align: center; /* Centers text */
+  padding: 20px; /* Adds padding around content */
+  display:inline;
+  font-style: oblique;
+  font-size: 30px;
+  font-family: 'lobster';
+  
+}
+
+.navigation1 {
+	position: absolute; /* Positions content over the image */
+  top: 10%; /* Centers content vertically */
+  left: 20%; /* Centers content horizontally */
+  transform: translate(-50%, -50%); /* Offsets content to the center */
+  color: white; /* Text color */
+  text-align: center; /* Centers text */
+  padding: 20px; /* Adds padding around content */
+  display:inline;
+  
+
+}
+
+.navigation2 {
+	position: absolute; /* Positions content over the image */
+  top: 10%; /* Centers content vertically */
+  left: 80%; /* Centers content horizontally */
+  transform: translate(-50%, -50%); /* Offsets content to the center */
+  color: white; /* Text color */
+  text-align: center; /* Centers text */
+  padding: 20px; /* Adds padding around content */
+  display:inline;
+  
+
+}
+
+.dash{
+    position:flex;
+    height:20px;
+    width:20px;
+}
+
+.logo {
+	position: absolute;
+	bottom: 75%;
+	left: 35%;
+	height: 80px;
+	width: 80px;
+}
+
+.bg{
+	width: 100%;
+	height:550px;
+	margin:0;
+	display: block;
+     box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.8);
+	
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    z-index: 1;
+    color: black;
+
+}
+
+.nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Change the color to black or any other color */
+  font-size: 18px; /* Font size */
+  font-family: Cursive; /* Font family */
+  padding: 10px 15px; /* Padding around the text */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.quote {
+	font-size: 35px;
+	position: absolute;
+	top: 60%; /* Centers content vertically */
+    left: 10%; /* Centers content horizontally */
+    color: white;
+    font-family: Cursive;
+    font-style: oblique;
+    font-style: bold;
+}
+
+
+
+
+.container{
+	align-content: center;
+	display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    gap: 20px; /* Adds space between items */
+}
+
+.serve{
+	text-align: center;
+	text-shadow: sandybrown;
+	font-family: cursive;
+	font-size: 35px;
+	font-style: oblique;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.menu-item{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Fixed width for each item */
+}
+
+.img {
+    width: 150px;  /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    border-radius: 50%; /* To maintain the circular shape, if needed */
+    object-fit: cover;  /* Ensures the image covers the entire area while maintaining aspect ratio */
+    box-shadow: 0 4px 10px rgba(0, 0.5, 0.5, 0.5);
+}
+
+.description_title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: cursive;
+    font-style: oblique;
+}
+
+.description {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+.ambience {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+
+}
+
+.amb {
+    font-size: 35px;
+    font-family: cursive;
+    font-style: oblique;
+    justify-content: center;
+    text-align: center;
+}
+
+.amb_img{
+    height: 300px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.5);
+}
+
+.about{
+    display: flex;
+    margin: 40px;
+    gap: 30px;
+}
+
+.about_img{
+    height: 300px;
+    width: 1500px;
+    border-radius: 50%;
+     box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.5);
+}
+
+.about_description{
+    font-size: 15px;
+    font-family: cursive;
+    font-style: italic;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+
+.transparent-box{
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.quote_img{
+    align-content: center;
+    justify-content: center;
+    height: 20px;
+    width:20px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.5);
+}
+
+.testimonial-description{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.testimonial-writer{
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.why{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.why_img{
+    height: 40px;
+    width:40px;
+}
+
+.why-description{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.video{
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+.frame{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.5);
+    margin: 20px;
+}
+
+.contact{
+    display: flex;
+    gap: 70px;
+    
+}
+
+.map{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.5);
+    margin: 20px;
+}
+
+.contact_img{
+    height: 40px;
+    width: 40px;
+}
+
+.contact_title{
+    font-style: oblique;
+    font-family: cursive;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact_description{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #50322c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.social{
+    display: inline-flex;
+    height: 30pxpx;
+    width:30px;
+    gap: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+
