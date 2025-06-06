@@ -9,7 +9,7 @@ const MenuSection = ({ scrollToSection, addToCart, isLoggedIn }) => {
       name: 'Espresso',
       description: 'A strong, concentrated coffee.',
       price: 2.99,
-      image: '/assets/images/coffee/espresso.jpeg',
+      image: '/assets/images/coffee/expresso.jpeg',
       category: 'coffee',
       rating: 4.8
     },
@@ -81,7 +81,7 @@ const MenuSection = ({ scrollToSection, addToCart, isLoggedIn }) => {
       name: 'Cold Brew',
       description: 'Smooth, cold-extracted coffee served over ice.',
       price: 3.99,
-      image: '/assets/images/coffee/cold_brew.jpg',
+      image: '/assets/images/coffee/cold_brew.webp',
       category: 'coffee',
       rating: 4.4
     },
@@ -451,7 +451,7 @@ const MenuSection = ({ scrollToSection, addToCart, isLoggedIn }) => {
         flexWrap: 'wrap'
       }}>
         <img 
-          src="/assets/images/about.avif"
+          src="/assets/images/ambience/about.avif"
           className="about_img"
           style={{
             height: '300px',
@@ -616,59 +616,101 @@ const MenuSection = ({ scrollToSection, addToCart, isLoggedIn }) => {
       </div>
 
       {/* Videos Section */}
-      <p className="amb" style={{
-        fontSize: '35px',
-        fontFamily: 'cursive',
-        fontStyle: 'oblique',
-        justifyContent: 'center',
-        textAlign: 'center',
-        marginTop: '80px'
-      }}>
-        Videos
-      </p>
-      
-      <div className="video" style={{
-        display: 'flex',
-        padding: '20px',
-        gap: '40px',
-        justifyContent: 'center',
-        flexWrap: 'wrap'
-      }}>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/MYPVQccHhAQ?si=qBwsdGkJw14NhTKN" 
-          title="Coffee making video 1"
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerPolicy="strict-origin-when-cross-origin" 
-          allowFullScreen 
-          className="frame"
-          style={{
-            borderRadius: '15px',
-            boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)',
-            margin: '20px'
-          }}
-        />
-        
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/0L38Z9hIi5s?si=UGrP-W2xKGtz319Y" 
-          title="Coffee making video 2"
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerPolicy="strict-origin-when-cross-origin" 
-          allowFullScreen 
-          className="frame"
-          style={{
-            borderRadius: '15px',
-            boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)',
-            margin: '20px'
-          }}
-        />
-      </div>
+ // Update the Videos Section in your MenuSection.js component
+// Replace the existing videos section with this code:
 
+{/* Videos Section */}
+<p className="amb" style={{
+  fontSize: '35px',
+  fontFamily: 'cursive',
+  fontStyle: 'oblique',
+  justifyContent: 'center',
+  textAlign: 'center',
+  marginTop: '80px'
+}}>
+  Videos
+</p>
+
+<div className="video" style={{
+  display: 'flex',
+  padding: '20px',
+  gap: '40px',
+  justifyContent: 'center',
+  flexWrap: 'wrap',
+  alignItems: 'center'
+}}>
+  <div className="video-container" style={{
+    flex: '1 1 500px',
+    minWidth: '300px',
+    maxWidth: '560px'
+  }}>
+    <iframe 
+      width="100%" 
+      height="315" 
+      src="https://www.youtube.com/embed/MYPVQccHhAQ?si=qBwsdGkJw14NhTKN" 
+      title="Coffee making video 1"
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerPolicy="strict-origin-when-cross-origin" 
+      allowFullScreen 
+      className="frame"
+      style={{
+        borderRadius: '15px',
+        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)',
+        aspectRatio: '16/9'
+      }}
+    />
+  </div>
+  
+  <div className="video-container" style={{
+    flex: '1 1 500px',
+    minWidth: '300px',
+    maxWidth: '560px'
+  }}>
+    <iframe 
+      width="100%" 
+      height="315" 
+      src="https://www.youtube.com/embed/0L38Z9hIi5s?si=UGrP-W2xKGtz319Y" 
+      title="Coffee making video 2"
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerPolicy="strict-origin-when-cross-origin" 
+      allowFullScreen 
+      className="frame"
+      style={{
+        borderRadius: '15px',
+        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)',
+        aspectRatio: '16/9'
+      }}
+    />
+  </div>
+</div>
+
+{/* Add responsive CSS for videos */}
+<style jsx>{`
+  @media (max-width: 768px) {
+    .video {
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+    
+    .video-container {
+      flex: none !important;
+      width: 100% !important;
+    }
+    
+    .frame {
+      width: 100% !important;
+      height: 200px !important;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .frame {
+      height: 250px !important;
+    }
+  }
+`}</style>
       {/* Contact Section */}
       <p className="amb" id="contact" style={{
         fontSize: '35px',
