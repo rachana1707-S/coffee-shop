@@ -28,12 +28,48 @@ Welcome to the **Coffee Shop** project! This is a simple, modern, and responsive
 ## 📂 Project Structure
 
 coffee-shop/
-├── index.html # Main HTML file
-├── style.css # Styling for the site
-├── script.js # JavaScript for interactions (if any)
-└── assets/ # Images and other static assets
-└── images/
-
+├── public/
+│ ├── assets/
+│ │ └── images/
+│ │ ├── ambience/
+│ │ ├── coffee/
+│ │ ├── icons/
+│ │ └── snacks/
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── logo192.png
+│ ├── logo512.png
+│ ├── manifest.json
+│ └── robots.txt
+│
+├── src/
+│ ├── components/
+│ │ ├── AuthModal.js
+│ │ ├── CafeMosaicApp.js
+│ │ ├── CartModal.js
+│ │ ├── CheckoutModal.js
+│ │ ├── Footer.js
+│ │ ├── Header.js
+│ │ ├── ItemCard.js
+│ │ ├── MenuSection.js
+│ │ └── ReviewSection.js
+│ │
+│ ├── context/
+│ │ ├── AuthContext.js
+│ │ └── CartContext.js
+│ │
+│ ├── services/
+│ │ ├── api.js
+│ │ └── auth.js
+│ │
+│ ├── styles/
+│ │ ├── components.css
+│ │ ├── globals.css
+│ │ └── responsive.css
+│ │
+│ └── utils/
+│ ├── constants.js
+│ └── helpers.js
 
 ---
 
