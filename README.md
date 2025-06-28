@@ -69,7 +69,7 @@ Option 2 (CLI):
 open index.html     # macOS
 start index.html    # Windows 
 
-🌐 Deploying to GitHub Pages
+## 🌐 Deploying to GitHub Pages
 1. Push your latest code to the main branch.
 
 2. Go to your repo → Settings → Pages
@@ -84,11 +84,7 @@ start index.html    # Windows
 Your site will be live at:
 https://rachana1707-S.github.io/coffee-shop/
 
-📬 Contact
+## 📬 Contact
 For suggestions or feedback, feel free to reach out:
 
 GitHub: rachana1707-S
-
-📄 License
-This project is licensed under the MIT License.
-Feel free to use, modify, and share with attribution.
