@@ -26,7 +26,7 @@ Welcome to the **Coffee Shop** project! This is a simple, modern, and responsive
 ---
 
 ## 📂 Project Structure
-
+```bash
 coffee-shop/
 ├── public/
 │ ├── assets/
@@ -70,6 +70,8 @@ coffee-shop/
 │ └── utils/
 │ ├── constants.js
 │ └── helpers.js
+
+```
 
 ---
 
